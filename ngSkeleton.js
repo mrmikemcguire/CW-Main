@@ -1,6 +1,6 @@
-var ngDemoApp = angular.module('ngDemoApp', ['ngRoute']);
+var ngSkeleton = angular.module('ngSkeleton', ['ngRoute']);
 
-ngDemoApp.config(function($routeProvider) 
+ngSkeleton.config(function($routeProvider) 
     {
     $routeProvider
         .when('/', 
@@ -20,17 +20,17 @@ ngDemoApp.config(function($routeProvider)
               });
 	});
 
-ngDemoApp.controller('mainController', function($scope) 
+ngSkeleton.controller('mainController', function($scope) 
     {
     $scope.message = 'Everyone come and see how good I look!';
 	});
 
-ngDemoApp.controller('aboutController', function($scope) 
+ngSkeleton.controller('aboutController', function($scope) 
     {
     $scope.message = 'Look! I am an about page.';
 	});
 
-ngDemoApp.controller('contactController', function($scope) 
+ngSkeleton.controller('contactController', function($scope) 
     {
     $scope.message = 'Contact us! JK. This is just a demo.';
 	});
