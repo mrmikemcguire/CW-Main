@@ -5,14 +5,14 @@
 <html ng-app="ngSkeleton">
 
 <head>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="ngSkeleton.css">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 </head>
 
-<body ng-controller="mainController">
-    
+<body ng-controller="mainController"> 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -35,18 +35,15 @@
         </div>
     </nav>
 
-
   <div id="main">
-    <!-- angular templating -->
-		<!-- this is where content will be injected -->
-    <div ng-view></div>
+    <div ng-view></div> <!-- this is where content will be injected -->
   </div>
   
   <footer class="text-center">
     <h3>Mike McGuire &#169;  2016</h3>
   </footer>
   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="ngSkeleton.js"></script>
 </body>
