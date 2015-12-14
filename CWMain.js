@@ -13,6 +13,11 @@ ngSkeleton.config(function($routeProvider)
               templateUrl : 'pages/about.html',
               controller  : 'aboutController'
 			  })
+        .when('/insult', 
+              {
+              templateUrl : 'pages/insult.html',
+              controller  : 'insultController'
+			  })
         .when('/contact', 
               {
               templateUrl : 'pages/contact.html',
@@ -21,6 +26,11 @@ ngSkeleton.config(function($routeProvider)
 	});
 
 ngSkeleton.controller('mainController', function($scope) 
+    {
+    $scope.message = 'Everyone come and see how good I look!';
+	});
+
+ngSkeleton.controller('insultController', function($scope) 
     {
     $scope.message = 'Everyone come and see how good I look!';
 	});
