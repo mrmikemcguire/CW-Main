@@ -27,7 +27,7 @@ ngSkeleton.config(function($routeProvider)
 
 ngSkeleton.controller('mainController', function($scope) 
     {
-    $scope.message = 'Everyone come and see how good I look!';
+    $scope.message = 'This is the future home of the CodeWizard main page';
 	});
 
 ngSkeleton.controller('insultController', function($scope) 
